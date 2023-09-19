@@ -1,0 +1,2 @@
+# EcoCart
+MERN stack
