@@ -1,34 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Search,ShoppingCartOutlined } from '@material-ui/icons'
+import { Search, ShoppingCartOutlined } from '@material-ui/icons'
 import { Badge } from '@material-ui/core'
 
 const Container = styled.div`
      height:60px;
      margin-bottom:15px;
      margin-top:0px;
-`
+`;
 const Wrapper = styled.div`
 padding:10px 20px;
 display:flex;
 align-items:center;
-justify-content:space-between`
+justify-content:space-between`;
 
 const Left = styled.div`
 flex:1;
 display:flex;
 align-items:center
-`
+`;
 const Center = styled.div`
 flex:1;
 text-align:center
-`
+`;
 const Right = styled.div`
 flex:1;
 display:flex;
 align-items:center;
 justify-content:flex-end
-`
+`;
 
 const SearchContainer = styled.div`
 border:0.5px solid lightgray;
@@ -36,23 +36,23 @@ display:flex;
 align-items:center;
 margin-left:25px;
 padding:5px;
-`
+`;
 
 const Input = styled.input`
 border:none
-`
+`;
 const Logo = styled.h1`
 font-weight:bold
-`
+`;
 const Language = styled.span`
 font-size:14px;
 cursor:pointer
-`
+`;
 const MenuItem = styled.div`
 font-size:14px;
 cursor:pointer;
 margin-left:25px;
-`
+`;
 const Navbar = () => {
   return (
     <Container>
@@ -64,7 +64,7 @@ const Navbar = () => {
           </Language>
           <SearchContainer>
             <Input />
-            <Search style={{color:"gray",fontSize:16}} />
+            <Search style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
 
 
@@ -76,18 +76,18 @@ const Navbar = () => {
           <Logo>EcoCart</Logo>
         </Center>
 
-         
+
         <Right>
 
           <MenuItem>
-           Login
+            Login
           </MenuItem>
           <MenuItem>
-         Register
+            Register
           </MenuItem>
           <MenuItem>
             <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlined  />
+              <ShoppingCartOutlined />
             </Badge>
           </MenuItem>
         </Right>
